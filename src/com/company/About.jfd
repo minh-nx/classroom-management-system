@@ -1,0 +1,75 @@
+JFDML JFormDesigner: "7.0.5.2.410" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "About CMS"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/com/images/cmsLogo.png" )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "contentPanel"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "A Java OOP module Project"
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 135
+					"y": 85
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "infoLabel"
+					"text": "Classroom Management System"
+					"font": new java.awt.Font( "Segoe UI", 1, 15 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 135
+					"y": 45
+					"width": 240
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "logoLabel"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/logoLabel.png" )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 40
+					"y": 55
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "okButton"
+					"text": "OK"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancel", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 68
+					"height": -2
+					"x": 295
+					"y": 190
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "okButton2"
+					"text": "Help"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "help", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 68
+					"height": -2
+					"x": 205
+					"y": 190
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "backgroundLabel"
+					"text": "text"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/background.png" )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 390
+					"height": 245
+					"x": 0
+					"y": 0
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 150, 90 )
+			"size": new java.awt.Dimension( 390, 270 )
+		} )
+	}
+}

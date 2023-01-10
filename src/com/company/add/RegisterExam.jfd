@@ -1,0 +1,142 @@
+JFDML JFormDesigner: "7.0.5.2.410" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "insets 0,hidemode 3"
+			"$columnConstraints": "[grow,fill]"
+			"$rowConstraints": "[grow,fill]"
+		} ) {
+			name: "this"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/com/images/cmsLogo.png" )
+			"title": "Register Exam"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "dialogPane"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "idLabel"
+					"text": "Student ID"
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 131073, 0, false )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 78
+					"x": 10
+					"y": 15
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "idTextField"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 300
+					"x": 95
+					"y": 10
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "checkButton"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/check.png" )
+					"toolTipText": "Check Student"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "check", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 21
+					"height": 21
+					"x": 405
+					"y": 10
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "moduleLabel"
+					"text": "Module"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 78
+					"x": 10
+					"y": 50
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "moduleTextField"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 330
+					"x": 95
+					"y": 45
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "attemptLabel"
+					"text": "Attempt"
+					"foreground": sfield java.awt.Color white
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 78
+					"x": 10
+					"y": 85
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "attemptTextField"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 330
+					"x": 95
+					"y": 80
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "innerpanel"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "studentScrollPane"
+						"border": new javax.swing.border.TitledBorder( "Exam Registration" )
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "examTabel"
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 395
+						"height": 85
+						"x": 10
+						"y": 5
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 415
+					"height": 100
+					"x": 10
+					"y": 120
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "addButton"
+					"text": "Add"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/add.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addExamRegistration", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 100
+					"x": 195
+					"y": 235
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "cancelButton"
+					"text": "Cancel"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/cancel.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancel", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 100
+					"x": 325
+					"y": 235
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "backgroundImageLabel"
+					"text": "text"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/background.png" )
+					"verticalAlignment": 1
+					"horizontalAlignment": 0
+					"labelFor": new FormReference( "idTextField" )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 440
+					"height": 275
+					"x": 0
+					"y": 0
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 0,align leading top,grow 0 0"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 15, 20 )
+			"size": new java.awt.Dimension( 435, 335 )
+		} )
+	}
+}

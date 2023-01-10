@@ -1,0 +1,207 @@
+JFDML JFormDesigner: "7.0.5.2.410" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"title": "Classroom Management System"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/com/images/cmsLogo.png" )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "contentPanel"
+				add( new FormContainer( "javax.swing.JToolBar", new FormLayoutManager( class javax.swing.JToolBar ) ) {
+					name: "toolBar1"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "addStudentButton"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/addStudent1.png" )
+						"toolTipText": "Add Student"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addStudentButton", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "editStudentButton"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/editStudent.png" )
+						"toolTipText": "Edit Student"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "editStudentButton", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "viewStudentButton"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/viewStudent.png" )
+						"toolTipText": "View Student"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewStudentButton", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "removeStudentButton"
+						"icon": &SwingIcon0 new com.jformdesigner.model.SwingIcon( 0, "/com/images/trash.png" )
+						"toolTipText": "Delete Student"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "removeStudent", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+						name: "studentSeparator"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "addAttendanceButton"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/addAttendance1.png" )
+						"toolTipText": "Add Attendance"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addAttendanceButton", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "editAttendanceButton"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/editAttendance1.png" )
+						"toolTipText": "Edit Attendance"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "editAttendanceButton", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "viewAttendanceButton"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/viewAttendance1.png" )
+						"toolTipText": "View Attendance"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewAttendanceButton", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "removeAtttendanceButton"
+						"icon": #SwingIcon0
+						"toolTipText": "Delete Attendance"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "removeAtttendance", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+						name: "attendanceSeparator"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "examRegisterButton"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/list.png" )
+						"toolTipText": "Register Exam"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "examRegister", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+						name: "examSeparator"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "searchButton"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/search.png" )
+						"toolTipText": "Search"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "search", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "infoButton"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/info.png" )
+						"toolTipText": "About"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "infoButton", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "exitButton"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/exitButton.png" )
+						"toolTipText": "Exit"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exitButton", true ) )
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 0
+					"y": 0
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 0
+				"width": 440
+				"height": 265
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "fileMenu"
+					"text": "File"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "logoutMenuItem"
+						"text": "Log Out"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "logoutMenuItem", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "closeMenuItem"
+						"text": "Close"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 115, 520, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "closeMenuItem", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "studentMenu"
+					"text": "Student"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "addStudentMenuItem"
+						"text": "Add Student"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 78, 130, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "registerStudent", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "editStudentMenuItem"
+						"text": "Edit Student"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 69, 130, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "editStudent", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "viewStudentMenuItem"
+						"text": "View Student"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 79, 130, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewStudent", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem1"
+						"text": "Search Student"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 83, 130, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchStudent", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "attendanceMenu"
+					"text": "Attendance"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "addAttendanceMenuItem"
+						"text": "Add Attendance"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 78, 520, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addAttendance", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem2"
+						"text": "Edit Attendance"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 69, 520, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "editAttendance", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "viewAttendanceMenuItem"
+						"text": "View Attendance"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 79, 520, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewAttendance", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem3"
+						"text": "Search Attendance"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 83, 520, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchAttendance", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "examMenu"
+					"text": "Exam"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "registerExamMenuItem"
+						"text": "Register Exam"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "registerExam", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "helpMenu"
+					"text": "Help"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "aboutMenuItem"
+						"text": "About"
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 73, 130, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "aboutMenuItem", true ) )
+					} )
+				} )
+				add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+					name: "hSpacer"
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 40, 30 )
+			"size": new java.awt.Dimension( 440, 320 )
+		} )
+	}
+}
+

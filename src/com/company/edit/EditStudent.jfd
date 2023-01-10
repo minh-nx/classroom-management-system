@@ -1,0 +1,181 @@
+JFDML JFormDesigner: "7.0.5.2.410" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "insets 0,hidemode 3"
+			"$columnConstraints": "[grow,fill]"
+			"$rowConstraints": "[grow,fill]"
+		} ) {
+			name: "this"
+			"title": "Edit Student"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/com/images/logoLabel.png" )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "contentPanel"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "idLabel"
+					"text": "Student ID"
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 131073, 0, false )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 78
+					"height": 16
+					"x": 10
+					"y": 20
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "idTextField"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 265
+					"x": 95
+					"y": 15
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "checkButton"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/check.png" )
+					"toolTipText": "Check Student"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "checkStudent", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 21
+					"height": 21
+					"x": 365
+					"y": 15
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "firstNameLabel"
+					"text": "First Name"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 78
+					"height": 16
+					"x": 10
+					"y": 60
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "firstNameTextField"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 291
+					"x": 95
+					"y": 52
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lastNameLabel"
+					"text": "Last Name"
+					"foreground": sfield java.awt.Color white
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 78
+					"height": 16
+					"x": 10
+					"y": 95
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "lastNameTextField"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 291
+					"x": 95
+					"y": 89
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "majorLabel"
+					"text": "Major"
+					"foreground": sfield java.awt.Color white
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 78
+					"height": 16
+					"x": 10
+					"y": 135
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "majorComboBox"
+					"model": new javax.swing.DefaultComboBoxModel {
+						selectedItem: "CSE"
+						addElement( "CSE" )
+						addElement( "BBA" )
+						addElement( "BFA" )
+						addElement( "ARC" )
+						addElement( "MEN" )
+						addElement( "BFA" )
+						addElement( "BCE" )
+						addElement( "ECE" )
+					}
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 291
+					"x": 95
+					"y": 126
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "moduleLabel"
+					"text": "Module"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 78
+					"height": 16
+					"x": 10
+					"y": 170
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "moduleTextField"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 291
+					"x": 95
+					"y": 163
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "updateButton2"
+					"text": "Update"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/update.png" )
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "updateStudent", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 105
+					"x": 25
+					"y": 220
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "updateButton"
+					"text": "Remove"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/delete.png" )
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "removeStudent", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 105
+					"x": 155
+					"y": 220
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "cancelButton"
+					"text": "Cancel"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/cancel.png" )
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancel", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 105
+					"x": 280
+					"y": 220
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "backgroundLabel"
+					"text": "text"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/backGround4.png" )
+					"horizontalAlignment": 2
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 400
+					"height": 270
+					"x": 0
+					"y": 0
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 0"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 10 )
+			"size": new java.awt.Dimension( 400, 295 )
+		} )
+	}
+}

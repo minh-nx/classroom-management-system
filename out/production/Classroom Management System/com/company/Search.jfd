@@ -1,0 +1,335 @@
+JFDML JFormDesigner: "7.0.5.2.410" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"title": "Search"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/com/images/cmsLogo.png" )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "dialogPanel"
+				"border": new javax.swing.border.TitledBorder( "Delete Student" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "keywordLabel"
+					"text": "Enter Keyword"
+					"foreground": &Color0 new java.awt.Color( 255, 255, 255, 255 )
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 131073, 0, false )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 105
+					"x": 15
+					"y": 10
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "keywordTextField"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 215
+					"x": 110
+					"y": 10
+					"height": 20
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "innerpanel"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "resultScrollPane"
+						"border": new javax.swing.border.TitledBorder( "Result" )
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "resultTabel"
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 285
+						"height": 210
+						"x": 5
+						"y": 0
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 295
+					"height": 215
+					"x": 335
+					"y": 45
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "cancelButton"
+					"text": "Cancel"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/cancel.png" )
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancel", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 100
+					"x": 530
+					"y": 270
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "studentPanel"
+					"opaque": false
+					"border": new javax.swing.border.TitledBorder( null, "Student", 4, 0, null, sfield java.awt.Color white )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "searchStudentLabel"
+						"text": "Search by"
+						"foreground": sfield java.awt.Color white
+						"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 65
+						"x": 10
+						"y": 20
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "studentComboBox"
+						"model": &DefaultComboBoxModel0 new javax.swing.DefaultComboBoxModel {
+							selectedItem: "ID"
+							addElement( "ID" )
+							addElement( "FirstName" )
+							addElement( "LastName" )
+							addElement( "Major" )
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 195
+						"x": 75
+						"y": 20
+						"height": 20
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "searchStudentButton"
+						"font": &SwingDerivedFont1 new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+						"icon": &SwingIcon0 new com.jformdesigner.model.SwingIcon( 0, "/com/images/check.png" )
+						"toolTipText": "Search Student"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchStudent", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 21
+						"height": 21
+						"x": 280
+						"y": 35
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "orderStudentLabel"
+						"text": "Order by"
+						"foreground": sfield java.awt.Color white
+						"font": #SwingDerivedFont0
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 65
+						"height": 16
+						"x": 10
+						"y": 50
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "orderStuComboBox"
+						"model": #DefaultComboBoxModel0
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 115
+						"height": 20
+						"x": 75
+						"y": 50
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "orderTypeStuComboBox"
+						"model": &DefaultComboBoxModel1 new javax.swing.DefaultComboBoxModel {
+							selectedItem: "ASC"
+							addElement( "ASC" )
+							addElement( "DESC" )
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 70
+						"height": 20
+						"x": 200
+						"y": 50
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 310
+					"height": 85
+					"x": 15
+					"y": 35
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "attendancePanel"
+					"opaque": false
+					"border": new javax.swing.border.TitledBorder( null, "Attendance", 4, 0, null, sfield java.awt.Color white )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "searchAttendanceLabel"
+						"text": "Search by"
+						"foreground": sfield java.awt.Color white
+						"font": #SwingDerivedFont0
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 70
+						"height": 16
+						"x": 10
+						"y": 20
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "attendanceComboBox"
+						"model": &DefaultComboBoxModel2 new javax.swing.DefaultComboBoxModel {
+							selectedItem: "ID"
+							addElement( "ID" )
+							addElement( "Module" )
+							addElement( "Date" )
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 195
+						"height": 20
+						"x": 75
+						"y": 20
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "searchAttendanceButton"
+						"font": #SwingDerivedFont1
+						"icon": #SwingIcon0
+						"toolTipText": "Search Attendance"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchAttendance", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 21
+						"height": 21
+						"x": 280
+						"y": 35
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "orderAttendanceLabel"
+						"text": "Order by"
+						"foreground": sfield java.awt.Color white
+						"font": #SwingDerivedFont0
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 70
+						"height": 16
+						"x": 10
+						"y": 50
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "orderAttComboBox"
+						"model": #DefaultComboBoxModel2
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 115
+						"height": 20
+						"x": 75
+						"y": 50
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "orderTypeAttComboBox"
+						"model": #DefaultComboBoxModel1
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 70
+						"height": 20
+						"x": 200
+						"y": 50
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 310
+					"height": 85
+					"x": 15
+					"y": 125
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "examPanel"
+					"opaque": false
+					"border": new javax.swing.border.TitledBorder( null, "Exam", 4, 0, null, sfield java.awt.Color white )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "searchExamLabel"
+						"text": "Search by"
+						"foreground": sfield java.awt.Color white
+						"font": #SwingDerivedFont0
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 65
+						"height": 16
+						"x": 10
+						"y": 25
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "examComboBox"
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "ID"
+							addElement( "ID" )
+							addElement( "Module" )
+							addElement( "ExamDate" )
+							addElement( "Attempt" )
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 195
+						"height": 20
+						"x": 75
+						"y": 25
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "searchExamButton"
+						"font": #SwingDerivedFont1
+						"icon": #SwingIcon0
+						"toolTipText": "Search Exam"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchExam", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 21
+						"height": 21
+						"x": 280
+						"y": 40
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "orderExamLabel"
+						"text": "Order by"
+						"foreground": sfield java.awt.Color white
+						"font": #SwingDerivedFont0
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 65
+						"height": 16
+						"x": 10
+						"y": 55
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "orderExComboBox"
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "ID"
+							addElement( "ID" )
+							addElement( "Module" )
+							addElement( "ExamDate" )
+							addElement( "Attempt" )
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 115
+						"height": 20
+						"x": 75
+						"y": 55
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "orderTypeExComboBox"
+						"model": #DefaultComboBoxModel1
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 70
+						"height": 20
+						"x": 200
+						"y": 55
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 310
+					"height": 85
+					"x": 15
+					"y": 215
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "resultLabel"
+					"text": "Result"
+					"foreground": #Color0
+					"font": new java.awt.Font( "Segoe UI", 1, 16 )
+					"horizontalAlignment": 0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 105
+					"height": 16
+					"x": 435
+					"y": 20
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "backgroundLabel"
+					"text": "text"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/images/backGround4.png" )
+					"verticalAlignment": 1
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 0
+					"y": 0
+					"width": 645
+					"height": 315
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 645
+				"height": 310
+				"x": 0
+				"y": 0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 30, 10 )
+			"size": new java.awt.Dimension( 645, 340 )
+		} )
+	}
+}
